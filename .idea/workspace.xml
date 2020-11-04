@@ -1,7 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="ef763c0f-1319-48f5-a1bb-7f0c8c256188" name="Default Changelist" comment="" />
+    <list default="true" id="ef763c0f-1319-48f5-a1bb-7f0c8c256188" name="Default Changelist" comment="init">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/js/views/Home.vue" beforeDir="false" afterPath="$PROJECT_DIR$/resources/js/views/Home.vue" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -10,6 +14,9 @@
   <component name="ComposerSettings" synchronizationState="SYNCHRONIZE">
     <pharConfigPath>$PROJECT_DIR$/composer.json</pharConfigPath>
     <execution />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="PhpServers">
     <servers>
@@ -127,6 +134,7 @@
     </include_path>
   </component>
   <component name="ProjectId" id="1jkcrU4wHB4PRAYOA6YZBZJsE4n" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
     <option name="autoscrollFromSource" value="true" />
     <option name="autoscrollToSource" value="true" />
@@ -136,7 +144,7 @@
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/resources/js/components" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="ts.external.directory.path" value="C:\Program Files\JetBrains\PhpStorm 2020.2.1\plugins\JavaScriptLanguage\jsLanguageServicesImpl\external" />
     <property name="vue.rearranger.settings.migration" value="true" />
@@ -171,12 +179,24 @@
       <option name="presentableId" value="Default" />
       <updated>1604351728926</updated>
       <workItem from="1604351730000" duration="62890000" />
-      <workItem from="1604443086069" duration="27276000" />
+      <workItem from="1604443086069" duration="27999000" />
     </task>
+    <task id="LOCAL-00001" summary="init">
+      <created>1604471012388</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1604471012388</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="init" />
+    <option name="LAST_COMMIT_MESSAGE" value="init" />
   </component>
   <component name="WindowStateProjectService">
     <state x="392" y="370" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog" timestamp="1604361783685">
@@ -191,10 +211,10 @@
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
     <state x="1398" y="296" width="986" height="684" key="#xdebugger.XInspectDialog/0.0.2560.1400@0.0.2560.1400" timestamp="1604468710294" />
-    <state x="427" y="454" width="641" height="680" key="FileChooserDialogImpl" timestamp="1604387727594">
+    <state x="427" y="454" width="641" height="680" key="FileChooserDialogImpl" timestamp="1604470870361">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
-    <state x="427" y="454" width="641" height="680" key="FileChooserDialogImpl/0.0.2560.1400@0.0.2560.1400" timestamp="1604387727594" />
+    <state x="427" y="454" width="641" height="680" key="FileChooserDialogImpl/0.0.2560.1400@0.0.2560.1400" timestamp="1604470870361" />
     <state width="1166" height="281" key="GridCell.Tab.0.bottom" timestamp="1604470726484">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
@@ -247,6 +267,10 @@
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
     <state x="408" y="422" key="NewPhpClassDialog/0.0.2560.1400@0.0.2560.1400" timestamp="1604368787860" />
+    <state x="237" y="423" key="Vcs.Push.Dialog.v2" timestamp="1604471051498">
+      <screen x="0" y="0" width="2560" height="1400" />
+    </state>
+    <state x="237" y="423" key="Vcs.Push.Dialog.v2/0.0.2560.1400@0.0.2560.1400" timestamp="1604471051498" />
     <state width="647" height="700" key="XDebugger.FullValuePopup" timestamp="1604468708461">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
