@@ -88,8 +88,9 @@ create resources/js/store/modules/orders.js
 
 На данный момент работа выполнена ориентировочно на 70%
 
-![alt tag](Снимок экрана 2020-11-04 123342.png "Снимок экрана 2020-11-04 123342")
 
+
+![alt text](https://github.com/dralexsand/test_soft_solutions/Снимок экрана 2020-11-04 123342.png "Снимок экрана 2020-11-04 123342")
 
 
 
