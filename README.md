@@ -88,3 +88,9 @@ create resources/js/store/modules/orders.js
 
 На данный момент работа выполнена ориентировочно на 70%
 
+
+
+![alt text](screenshots/Снимок экрана 2020-11-04 123342.png Снимок экрана 2020-11-04 123342.png
+
+
+
