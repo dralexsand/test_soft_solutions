@@ -1,11 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="ef763c0f-1319-48f5-a1bb-7f0c8c256188" name="Default Changelist" comment="init">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/js/views/Home.vue" beforeDir="false" afterPath="$PROJECT_DIR$/resources/js/views/Home.vue" afterDir="false" />
-    </list>
+    <list default="true" id="ef763c0f-1319-48f5-a1bb-7f0c8c256188" name="Default Changelist" comment="correct" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -179,7 +175,7 @@
       <option name="presentableId" value="Default" />
       <updated>1604351728926</updated>
       <workItem from="1604351730000" duration="62890000" />
-      <workItem from="1604443086069" duration="27999000" />
+      <workItem from="1604443086069" duration="28387000" />
     </task>
     <task id="LOCAL-00001" summary="init">
       <created>1604471012388</created>
@@ -188,15 +184,34 @@
       <option name="project" value="LOCAL" />
       <updated>1604471012388</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="correct">
+      <created>1604471740550</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1604471740550</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
   </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="init" />
-    <option name="LAST_COMMIT_MESSAGE" value="init" />
+    <MESSAGE value="correct" />
+    <option name="LAST_COMMIT_MESSAGE" value="correct" />
   </component>
   <component name="WindowStateProjectService">
     <state x="392" y="370" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog" timestamp="1604361783685">
@@ -267,10 +282,10 @@
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
     <state x="408" y="422" key="NewPhpClassDialog/0.0.2560.1400@0.0.2560.1400" timestamp="1604368787860" />
-    <state x="237" y="423" key="Vcs.Push.Dialog.v2" timestamp="1604471051498">
+    <state x="237" y="423" key="Vcs.Push.Dialog.v2" timestamp="1604471775893">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
-    <state x="237" y="423" key="Vcs.Push.Dialog.v2/0.0.2560.1400@0.0.2560.1400" timestamp="1604471051498" />
+    <state x="237" y="423" key="Vcs.Push.Dialog.v2/0.0.2560.1400@0.0.2560.1400" timestamp="1604471775893" />
     <state width="647" height="700" key="XDebugger.FullValuePopup" timestamp="1604468708461">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
