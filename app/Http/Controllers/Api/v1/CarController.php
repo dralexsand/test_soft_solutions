@@ -3,6 +3,8 @@
 namespace App\Http\Controllers\Api\v1;
 
 use App\Http\Controllers\Controller;
+use App\Http\Requests\CarRequest;
+use App\Http\Requests\PostRequests\PostRequest;
 use App\Models\Brand;
 use App\Models\Car;
 use App\Models\CarModel;
@@ -10,50 +12,75 @@ use App\Models\Color;
 use App\Models\Transmission;
 use Illuminate\Http\Request;
 
-class CarController extends Controller
+class CarController extends ApiController
 {
 
-   public function listFilters(){
+    /**
+     * CarController constructor.
+     * @param Car $model
+     */
+    public function __construct(Car $model)
+    {
+        $this->model = $model;
+    }
 
-       $res = new \Illuminate\Http\Response();
+    public function listFilters()
+    {
 
-       $filters = [
-            'brands'=>$res->setContent(Brand::all()),
-            'models'=>$res->setContent(CarModel::all()),
-            'transmissions'=>$res->setContent(Transmission::all()),
-           'colors'=>$res->setContent(Color::all()),
-       ];
+        $res = new \Illuminate\Http\Response();
 
-       return $filters;
-   }
+        $filters = [
+            'brands' => $res->setContent(Brand::all()),
+            'models' => $res->setContent(CarModel::all()),
+            'transmissions' => $res->setContent(Transmission::all()),
+            'colors' => $res->setContent(Color::all()),
+        ];
 
-   public function applyFilters(Request $request){
+        return $filters;
+    }
 
-       $filters = $request->all();
-       return $filters;
-   }
+    public function applyFilters(Request $request)
+    {
 
+        $filters = $request->all();
+        return $filters;
+    }
 
     /**
-     * Display a listing of the resource.
-     *
-     * @return \Illuminate\Http\Response
+     * @param int $id
+     * @return mixed
      */
-    public function index()
+    public function delete(int $id)
+    {
+        return parent::delete($id);
+    }
+
+    public function create(PostRequest $request)
+    //public function create(CarRequest $request)
+    {
+        $model = new Car();
+        $model = $this->fillModelData($model, $request);
+        $model->save();
+        //return response()->json($model, 201);
+        return $this->sendResponse(
+            $model,
+            'Data successfully validated and has been saved',
+            201
+        );
+    }
+
+    public function getCars(CarRequest $request){
+
+    }
+
+    /*public function index()
     {
         return Car::paginate(20);
-    }
+    }*/
 
-    /**
-     * Store a newly created resource in storage.
-     *
-     * @param \Illuminate\Http\Request $request
-     * @return \Illuminate\Http\Response
-     */
-    public function store(Request $request)
-    {
-        //
-    }
+
+
+
 
     /**
      * Display the specified resource.
@@ -78,14 +105,6 @@ class CarController extends Controller
         //
     }
 
-    /**
-     * Remove the specified resource from storage.
-     *
-     * @param int $id
-     * @return \Illuminate\Http\Response
-     */
-    public function destroy($id)
-    {
-        //
-    }
+
+
 }

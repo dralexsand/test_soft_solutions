@@ -6,14 +6,14 @@
             <input
                 @change="onChangePrice()"
                 type="text" class="form-control" id="min_price"
-                v-model="min_price">
+                :value="min_price">
         </div>
         <div class="col-md-6 mb-3">
             <label for="max_price">Max price</label>
             <input
                 @change="onChangePrice()"
                 type="text" class="form-control" id="max_price"
-                v-model="max_price">
+                :value="max_price">
         </div>
     </div>
 
@@ -30,8 +30,8 @@ export default {
     ],
     data() {
         return {
-            min_price: 50,
-            max_price: 7000000
+            min_price: '',
+            max_price: ''
         }
     },
     methods: {
@@ -41,20 +41,20 @@ export default {
             console.log(this.min_price);
             console.log(this.max_price);
 
-            let price = {
+            /*let price = {
                 'min_price': this.min_price,
                 'max_price': this.max_price,
             }
 
-            this.$store.dispatch('filters/SET_PRICES_APPLY', price);
+            this.$store.dispatch('filters/SET_PRICES_APPLY', price);*/
         }
     },
     mounted() {
-        let price = {
+        /*let price = {
             'min_price': this.min_price,
             'max_price': this.max_price,
         }
-        this.$store.dispatch('filters/SET_PRICES_APPLY', price);
+        this.$store.dispatch('filters/SET_PRICES_APPLY', price);*/
     }
 }
 </script>

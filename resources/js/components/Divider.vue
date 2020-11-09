@@ -1,14 +1,10 @@
 <template>
-    <div>
-        <tr>
-            <td>
-                <div class="dropdown-divider"></div>
-            </td>
-        </tr>
-    </div>
+
+            <div class="dropdown-divider"></div>
+
 </template>
 <script>
 export default {
-    name : 'Divider'
+    name: 'Divider'
 }
 </script>

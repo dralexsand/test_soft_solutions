@@ -7,8 +7,8 @@ const state = () => ({
 // getters
 const getters = {
     GET_CARS(state) {
-        console.log('GET_CARS');
-        console.log(state.cars);
+        //console.log('GET_CARS');
+        //console.log(state.cars);
         return state.cars;
     }
 }

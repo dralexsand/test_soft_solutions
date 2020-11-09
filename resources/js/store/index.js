@@ -4,6 +4,7 @@ import Vuex from 'vuex';
 import cars from './modules/cars'
 import orders from './modules/orders'
 import filters from './modules/filters'
+import filterspost from './modules/filterspost'
 
 import 'es6-promise/auto';
 
@@ -14,6 +15,7 @@ export default new Vuex.Store({
     modules: {
         cars,
         orders,
-        filters
+        filters,
+        filterspost
     }
 });

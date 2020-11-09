@@ -1,13 +1,65 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="BranchesTreeState">
+    <expand>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="LOCAL_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="GROUP_NODE:master" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+    </expand>
+    <select>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="GROUP_NODE:master" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="BRANCH:master/origin" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+    </select>
+  </component>
   <component name="ChangeListManager">
-    <list default="true" id="ef763c0f-1319-48f5-a1bb-7f0c8c256188" name="Default Changelist" comment="correct" />
+    <list default="true" id="ef763c0f-1319-48f5-a1bb-7f0c8c256188" name="Default Changelist" comment="add screenshot">
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/Api/v1/CarController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/Api/v1/CarController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/Controller.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/Controller.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Requests/BrandRequest.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Requests/CarModelRequest.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Requests/CarRequest.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Requests/ColorRequest.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Requests/TransmissionRequest.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Models/Brand.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Models/Brand.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Models/Car.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Models/Car.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Models/CarModel.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Models/CarModel.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Models/Color.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Models/Color.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Models/Transmission.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Models/Transmission.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/js/app.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/js/app.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/js/components/BoxItem.vue" beforeDir="false" afterPath="$PROJECT_DIR$/resources/js/components/BoxItem.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/js/components/BoxPrice.vue" beforeDir="false" afterPath="$PROJECT_DIR$/resources/js/components/BoxPrice.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/js/components/Divider.vue" beforeDir="false" afterPath="$PROJECT_DIR$/resources/js/components/Divider.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/js/store/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/resources/js/store/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/js/store/modules/cars.js" beforeDir="false" afterPath="$PROJECT_DIR$/resources/js/store/modules/cars.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/js/store/modules/filters.js" beforeDir="false" afterPath="$PROJECT_DIR$/resources/js/store/modules/filters.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/js/views/Home.vue" beforeDir="false" afterPath="$PROJECT_DIR$/resources/js/views/Home.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/js/views/Posts.vue" beforeDir="false" afterPath="$PROJECT_DIR$/resources/js/views/Posts.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/routes/api/api.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/api/api.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/routes/console.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/console.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Снимок экрана 2020-11-04 123342.png" beforeDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
-  <component name="ComposerSettings" synchronizationState="SYNCHRONIZE">
+  <component name="ComposerSettings" doNotAsk="true" synchronizationState="SYNCHRONIZE">
     <pharConfigPath>$PROJECT_DIR$/composer.json</pharConfigPath>
     <execution />
   </component>
@@ -17,9 +69,10 @@
   <component name="PhpServers">
     <servers>
       <server host="127.0.0.1" id="705c1ad9-fa3d-4ac7-8831-a1b998b2f6e0" name="127.0.0.1" port="8000" />
+      <server host="127.0.0.1" id="a021f504-0f06-4170-a821-af06877dcbc6" name="127.0.0.1 (1)" port="8083" />
     </servers>
   </component>
-  <component name="PhpWorkspaceProjectConfiguration">
+  <component name="PhpWorkspaceProjectConfiguration" interpreter_name="PHP 7.4">
     <include_path>
       <path value="$PROJECT_DIR$/vendor/phpdocumentor/reflection-docblock" />
       <path value="$PROJECT_DIR$/vendor/phpdocumentor/reflection-common" />
@@ -130,7 +183,9 @@
     </include_path>
   </component>
   <component name="ProjectId" id="1jkcrU4wHB4PRAYOA6YZBZJsE4n" />
-  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="1" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="autoscrollFromSource" value="true" />
     <option name="autoscrollToSource" value="true" />
@@ -140,24 +195,26 @@
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../tests/lara" />
     <property name="nodejs_package_manager_path" value="npm" />
+    <property name="settings.editor.selected.configurable" value="preferences.editor" />
     <property name="ts.external.directory.path" value="C:\Program Files\JetBrains\PhpStorm 2020.2.1\plugins\JavaScriptLanguage\jsLanguageServicesImpl\external" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="RecentsManager">
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="C:\server\domains\projectss\carbase.loc\resources\js" />
-      <recent name="C:\server\domains\projectss\carbase.loc\resources\js\components\parts" />
-      <recent name="C:\server\domains\projectss\carbase.loc\routes\web" />
-      <recent name="C:\server\domains\projectss\carbase.loc\routes\api" />
-    </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\server\domains\projectss\carbase.loc\resources\js\components" />
       <recent name="C:\server\domains\projectss\carbase.loc\resources\js\store\modules" />
-      <recent name="C:\server\domains\projectss\carbase.loc\resources\js\components\parts" />
       <recent name="C:\server\domains\projectss\carbase.loc\resources\js\views" />
-      <recent name="C:\server\domains\projectss\carbase.loc\resources\views" />
+      <recent name="C:\server\domains\projectss\carbase.loc\app\Http\Requests\FilterRequests" />
+      <recent name="C:\server\domains\projectss\carbase.loc\_src" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\server\domains\projectss\carbase.loc\resources\js\components" />
+      <recent name="C:\server\domains\projectss\carbase.loc\app\Models" />
+      <recent name="C:\server\domains\projectss\carbase.loc" />
+      <recent name="C:\server\domains\projectss\carbase.loc\resources\js" />
+      <recent name="C:\server\domains\projectss\carbase.loc\resources\js\components\parts" />
     </key>
   </component>
   <component name="RunManager">
@@ -175,7 +232,11 @@
       <option name="presentableId" value="Default" />
       <updated>1604351728926</updated>
       <workItem from="1604351730000" duration="62890000" />
-      <workItem from="1604443086069" duration="28387000" />
+      <workItem from="1604443086069" duration="29117000" />
+      <workItem from="1604498953823" duration="39918000" />
+      <workItem from="1604551188372" duration="35000" />
+      <workItem from="1604611041584" duration="59112000" />
+      <workItem from="1604784387842" duration="81344000" />
     </task>
     <task id="LOCAL-00001" summary="init">
       <created>1604471012388</created>
@@ -191,7 +252,14 @@
       <option name="project" value="LOCAL" />
       <updated>1604471740550</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="add screenshot">
+      <created>1604472024913</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1604472024913</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -202,98 +270,132 @@
       <map>
         <entry key="MAIN">
           <value>
-            <State />
+            <State>
+              <option name="FILTERS">
+                <map>
+                  <entry key="branch">
+                    <value>
+                      <list>
+                        <option value="master/origin" />
+                      </list>
+                    </value>
+                  </entry>
+                </map>
+              </option>
+            </State>
           </value>
         </entry>
       </map>
     </option>
+    <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="init" />
     <MESSAGE value="correct" />
-    <option name="LAST_COMMIT_MESSAGE" value="correct" />
+    <MESSAGE value="add screenshot" />
+    <option name="LAST_COMMIT_MESSAGE" value="add screenshot" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="392" y="370" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog" timestamp="1604361783685">
+    <state x="220" y="358" key="#CLI_Interpreters" timestamp="1604533113400">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
-    <state x="392" y="370" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog/0.0.2560.1400@0.0.2560.1400" timestamp="1604361783685" />
-    <state x="377" y="454" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog" timestamp="1604378354702">
+    <state x="220" y="358" key="#CLI_Interpreters/0.0.2560.1400@0.0.2560.1400" timestamp="1604533113400" />
+    <state x="266" y="381" key="#Inspections" timestamp="1604880536309">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
-    <state x="377" y="454" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog/0.0.2560.1400@0.0.2560.1400" timestamp="1604378354702" />
-    <state x="1398" y="296" width="986" height="684" key="#xdebugger.XInspectDialog" timestamp="1604468710294">
+    <state x="266" y="381" key="#Inspections/0.0.2560.1400@0.0.2560.1400" timestamp="1604880536309" />
+    <state x="392" y="0" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog" timestamp="1604644037626">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
-    <state x="1398" y="296" width="986" height="684" key="#xdebugger.XInspectDialog/0.0.2560.1400@0.0.2560.1400" timestamp="1604468710294" />
-    <state x="427" y="454" width="641" height="680" key="FileChooserDialogImpl" timestamp="1604470870361">
+    <state x="392" y="0" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog/0.0.2560.1400@0.0.2560.1400" timestamp="1604644037626" />
+    <state x="377" y="454" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog" timestamp="1604639555736">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
-    <state x="427" y="454" width="641" height="680" key="FileChooserDialogImpl/0.0.2560.1400@0.0.2560.1400" timestamp="1604470870361" />
-    <state width="1166" height="281" key="GridCell.Tab.0.bottom" timestamp="1604470726484">
+    <state x="377" y="454" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog/0.0.2560.1400@0.0.2560.1400" timestamp="1604639555736" />
+    <state x="1373" y="296" width="768" height="851" key="#xdebugger.XInspectDialog" timestamp="1604893790211">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
-    <state width="1166" height="281" key="GridCell.Tab.0.bottom/0.0.2560.1400@0.0.2560.1400" timestamp="1604470726484" />
-    <state width="1166" height="281" key="GridCell.Tab.0.center" timestamp="1604470726484">
+    <state x="1373" y="296" width="768" height="851" key="#xdebugger.XInspectDialog/0.0.2560.1400@0.0.2560.1400" timestamp="1604893790211" />
+    <state x="427" y="454" width="641" height="680" key="FileChooserDialogImpl" timestamp="1604898554474">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
-    <state width="1166" height="281" key="GridCell.Tab.0.center/0.0.2560.1400@0.0.2560.1400" timestamp="1604470726484" />
-    <state width="1166" height="281" key="GridCell.Tab.0.left" timestamp="1604470726483">
+    <state x="427" y="454" width="641" height="680" key="FileChooserDialogImpl/0.0.2560.1400@0.0.2560.1400" timestamp="1604898554474" />
+    <state width="1248" height="290" key="GridCell.Tab.0.bottom" timestamp="1604898555680">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
-    <state width="1166" height="281" key="GridCell.Tab.0.left/0.0.2560.1400@0.0.2560.1400" timestamp="1604470726483" />
-    <state width="1166" height="281" key="GridCell.Tab.0.right" timestamp="1604470726484">
+    <state width="1248" height="290" key="GridCell.Tab.0.bottom/0.0.2560.1400@0.0.2560.1400" timestamp="1604898555680" />
+    <state width="1248" height="290" key="GridCell.Tab.0.center" timestamp="1604898555680">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
-    <state width="1166" height="281" key="GridCell.Tab.0.right/0.0.2560.1400@0.0.2560.1400" timestamp="1604470726484" />
-    <state width="1166" height="281" key="GridCell.Tab.1.bottom" timestamp="1604470726484">
+    <state width="1248" height="290" key="GridCell.Tab.0.center/0.0.2560.1400@0.0.2560.1400" timestamp="1604898555680" />
+    <state width="1248" height="290" key="GridCell.Tab.0.left" timestamp="1604898555680">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
-    <state width="1166" height="281" key="GridCell.Tab.1.bottom/0.0.2560.1400@0.0.2560.1400" timestamp="1604470726484" />
-    <state width="1166" height="281" key="GridCell.Tab.1.center" timestamp="1604470726484">
+    <state width="1248" height="290" key="GridCell.Tab.0.left/0.0.2560.1400@0.0.2560.1400" timestamp="1604898555680" />
+    <state width="1248" height="290" key="GridCell.Tab.0.right" timestamp="1604898555680">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
-    <state width="1166" height="281" key="GridCell.Tab.1.center/0.0.2560.1400@0.0.2560.1400" timestamp="1604470726484" />
-    <state width="1166" height="281" key="GridCell.Tab.1.left" timestamp="1604470726484">
+    <state width="1248" height="290" key="GridCell.Tab.0.right/0.0.2560.1400@0.0.2560.1400" timestamp="1604898555680" />
+    <state width="1248" height="290" key="GridCell.Tab.1.bottom" timestamp="1604898555680">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
-    <state width="1166" height="281" key="GridCell.Tab.1.left/0.0.2560.1400@0.0.2560.1400" timestamp="1604470726484" />
-    <state width="1166" height="281" key="GridCell.Tab.1.right" timestamp="1604470726484">
+    <state width="1248" height="290" key="GridCell.Tab.1.bottom/0.0.2560.1400@0.0.2560.1400" timestamp="1604898555680" />
+    <state width="1248" height="290" key="GridCell.Tab.1.center" timestamp="1604898555680">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
-    <state width="1166" height="281" key="GridCell.Tab.1.right/0.0.2560.1400@0.0.2560.1400" timestamp="1604470726484" />
-    <state width="1166" height="281" key="GridCell.Tab.2.bottom" timestamp="1604470726484">
+    <state width="1248" height="290" key="GridCell.Tab.1.center/0.0.2560.1400@0.0.2560.1400" timestamp="1604898555680" />
+    <state width="1248" height="290" key="GridCell.Tab.1.left" timestamp="1604898555680">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
-    <state width="1166" height="281" key="GridCell.Tab.2.bottom/0.0.2560.1400@0.0.2560.1400" timestamp="1604470726484" />
-    <state width="1166" height="281" key="GridCell.Tab.2.center" timestamp="1604470726484">
+    <state width="1248" height="290" key="GridCell.Tab.1.left/0.0.2560.1400@0.0.2560.1400" timestamp="1604898555680" />
+    <state width="1248" height="290" key="GridCell.Tab.1.right" timestamp="1604898555680">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
-    <state width="1166" height="281" key="GridCell.Tab.2.center/0.0.2560.1400@0.0.2560.1400" timestamp="1604470726484" />
-    <state width="1166" height="281" key="GridCell.Tab.2.left" timestamp="1604470726484">
+    <state width="1248" height="290" key="GridCell.Tab.1.right/0.0.2560.1400@0.0.2560.1400" timestamp="1604898555680" />
+    <state width="1248" height="290" key="GridCell.Tab.2.bottom" timestamp="1604898555680">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
-    <state width="1166" height="281" key="GridCell.Tab.2.left/0.0.2560.1400@0.0.2560.1400" timestamp="1604470726484" />
-    <state width="1166" height="281" key="GridCell.Tab.2.right" timestamp="1604470726484">
+    <state width="1248" height="290" key="GridCell.Tab.2.bottom/0.0.2560.1400@0.0.2560.1400" timestamp="1604898555680" />
+    <state width="1248" height="290" key="GridCell.Tab.2.center" timestamp="1604898555680">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
-    <state width="1166" height="281" key="GridCell.Tab.2.right/0.0.2560.1400@0.0.2560.1400" timestamp="1604470726484" />
+    <state width="1248" height="290" key="GridCell.Tab.2.center/0.0.2560.1400@0.0.2560.1400" timestamp="1604898555680" />
+    <state width="1248" height="290" key="GridCell.Tab.2.left" timestamp="1604898555680">
+      <screen x="0" y="0" width="2560" height="1400" />
+    </state>
+    <state width="1248" height="290" key="GridCell.Tab.2.left/0.0.2560.1400@0.0.2560.1400" timestamp="1604898555680" />
+    <state width="1248" height="290" key="GridCell.Tab.2.right" timestamp="1604898555680">
+      <screen x="0" y="0" width="2560" height="1400" />
+    </state>
+    <state width="1248" height="290" key="GridCell.Tab.2.right/0.0.2560.1400@0.0.2560.1400" timestamp="1604898555680" />
     <state x="408" y="422" key="NewPhpClassDialog" timestamp="1604368787860">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
     <state x="408" y="422" key="NewPhpClassDialog/0.0.2560.1400@0.0.2560.1400" timestamp="1604368787860" />
-    <state x="237" y="423" key="Vcs.Push.Dialog.v2" timestamp="1604471775893">
+    <state x="141" y="348" key="SettingsEditor" timestamp="1604560393925">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
-    <state x="237" y="423" key="Vcs.Push.Dialog.v2/0.0.2560.1400@0.0.2560.1400" timestamp="1604471775893" />
-    <state width="647" height="700" key="XDebugger.FullValuePopup" timestamp="1604468708461">
+    <state x="141" y="348" key="SettingsEditor/0.0.2560.1400@0.0.2560.1400" timestamp="1604560393925" />
+    <state x="237" y="423" key="Vcs.Push.Dialog.v2" timestamp="1604472029153">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
-    <state width="647" height="700" key="XDebugger.FullValuePopup/0.0.2560.1400@0.0.2560.1400" timestamp="1604468708461" />
-    <state x="310" y="319" width="672" height="678" key="search.everywhere.popup" timestamp="1604356724533">
+    <state x="237" y="423" key="Vcs.Push.Dialog.v2/0.0.2560.1400@0.0.2560.1400" timestamp="1604472029153" />
+    <state width="647" height="700" key="XDebugger.FullValuePopup" timestamp="1604889954694">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
-    <state x="310" y="319" width="672" height="678" key="search.everywhere.popup/0.0.2560.1400@0.0.2560.1400" timestamp="1604356724533" />
+    <state width="647" height="700" key="XDebugger.FullValuePopup/0.0.2560.1400@0.0.2560.1400" timestamp="1604889954694" />
+    <state x="433" y="472" key="refactoring.ChangeSignatureDialog" timestamp="1604883713315">
+      <screen x="0" y="0" width="2560" height="1400" />
+    </state>
+    <state x="433" y="472" key="refactoring.ChangeSignatureDialog/0.0.2560.1400@0.0.2560.1400" timestamp="1604883713315" />
+    <state x="296" y="334" width="672" height="677" key="run.anything.popup" timestamp="1604617208004">
+      <screen x="0" y="0" width="2560" height="1400" />
+    </state>
+    <state x="296" y="334" width="672" height="677" key="run.anything.popup/0.0.2560.1400@0.0.2560.1400" timestamp="1604617208004" />
+    <state x="541" y="468" width="672" height="678" key="search.everywhere.popup" timestamp="1604644141734">
+      <screen x="0" y="0" width="2560" height="1400" />
+    </state>
+    <state x="541" y="468" width="672" height="678" key="search.everywhere.popup/0.0.2560.1400@0.0.2560.1400" timestamp="1604644141734" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -325,13 +427,278 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="php">
           <url>file://$PROJECT_DIR$/app/Http/Controllers/Api/v1/CarController.php</url>
-          <line>26</line>
+          <line>38</line>
           <option name="timeStamp" value="14" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="php">
           <url>file://$PROJECT_DIR$/app/Http/Controllers/Api/v1/CarController.php</url>
-          <line>19</line>
+          <line>31</line>
           <option name="timeStamp" value="15" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="php">
+          <url>file://$PROJECT_DIR$/app/Http/Controllers/Api/v1/ApiCarController.php</url>
+          <line>29</line>
+          <option name="timeStamp" value="20" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="php">
+          <url>file://$PROJECT_DIR$/app/Http/Controllers/Api/v1/ApiCarController.php</url>
+          <line>28</line>
+          <option name="timeStamp" value="21" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="php">
+          <url>file://$PROJECT_DIR$/app/Http/Controllers/Api/v1/ApiController.php</url>
+          <line>85</line>
+          <option name="timeStamp" value="28" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="php">
+          <url>file://$PROJECT_DIR$/vendor/laravel/framework/src/Illuminate/Database/Eloquent/Model.php</url>
+          <line>350</line>
+          <option name="timeStamp" value="30" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="php">
+          <url>file://$PROJECT_DIR$/app/Http/Controllers/Api/v1/ApiController.php</url>
+          <line>106</line>
+          <option name="timeStamp" value="41" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="php">
+          <url>file://$PROJECT_DIR$/app/Http/Requests/PostRequests/PostRequest.php</url>
+          <line>17</line>
+          <option name="timeStamp" value="43" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="php">
+          <url>file://$PROJECT_DIR$/app/Http/Requests/PostRequests/PostRequest.php</url>
+          <line>30</line>
+          <option name="timeStamp" value="44" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="php">
+          <url>file://$PROJECT_DIR$/app/Http/Controllers/Api/v1/CarController.php</url>
+          <line>60</line>
+          <option name="timeStamp" value="45" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="php">
+          <url>file://$PROJECT_DIR$/app/Models/Generate.php</url>
+          <line>102</line>
+          <option name="timeStamp" value="47" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="php">
+          <url>file://$PROJECT_DIR$/app/Models/Generate.php</url>
+          <line>132</line>
+          <option name="timeStamp" value="48" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="php">
+          <url>file://$PROJECT_DIR$/app/Models/Generate.php</url>
+          <line>37</line>
+          <option name="timeStamp" value="50" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="php">
+          <url>file://$PROJECT_DIR$/app/Models/Generate.php</url>
+          <line>103</line>
+          <option name="timeStamp" value="51" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="php">
+          <url>file://$PROJECT_DIR$/app/Models/Generate.php</url>
+          <line>129</line>
+          <option name="timeStamp" value="52" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="php">
+          <url>file://$PROJECT_DIR$/app/Models/Filter.php</url>
+          <line>137</line>
+          <option name="timeStamp" value="57" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="php">
+          <url>file://$PROJECT_DIR$/app/Models/Filter.php</url>
+          <line>127</line>
+          <option name="timeStamp" value="58" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="php">
+          <url>file://$PROJECT_DIR$/app/Models/Filter.php</url>
+          <line>146</line>
+          <option name="timeStamp" value="59" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="php">
+          <url>file://$PROJECT_DIR$/app/Models/Filter.php</url>
+          <line>130</line>
+          <option name="timeStamp" value="60" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="php">
+          <url>file://$PROJECT_DIR$/app/Http/Controllers/Api/v1/FilterController.php</url>
+          <line>24</line>
+          <option name="timeStamp" value="63" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="php">
+          <url>file://$PROJECT_DIR$/app/Models/Filter.php</url>
+          <line>128</line>
+          <option name="timeStamp" value="64" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="php">
+          <url>file://$PROJECT_DIR$/app/Models/Filter.php</url>
+          <line>131</line>
+          <option name="timeStamp" value="65" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="php">
+          <url>file://$PROJECT_DIR$/app/Models/Filter.php</url>
+          <line>138</line>
+          <option name="timeStamp" value="66" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="php">
+          <url>file://$PROJECT_DIR$/app/Models/Filter.php</url>
+          <line>140</line>
+          <option name="timeStamp" value="67" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="php">
+          <url>file://$PROJECT_DIR$/app/Models/Filter.php</url>
+          <line>142</line>
+          <option name="timeStamp" value="68" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="php">
+          <url>file://$PROJECT_DIR$/app/Models/Filter.php</url>
+          <line>205</line>
+          <option name="timeStamp" value="69" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="php">
+          <url>file://$PROJECT_DIR$/app/Models/Filter.php</url>
+          <line>189</line>
+          <option name="timeStamp" value="70" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="php">
+          <url>file://$PROJECT_DIR$/app/Models/Filter.php</url>
+          <line>199</line>
+          <option name="timeStamp" value="71" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="php">
+          <url>file://$PROJECT_DIR$/app/Models/Filter.php</url>
+          <line>191</line>
+          <option name="timeStamp" value="72" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="php">
+          <url>file://$PROJECT_DIR$/app/Models/Filter.php</url>
+          <line>193</line>
+          <option name="timeStamp" value="73" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="php">
+          <url>file://$PROJECT_DIR$/app/Models/Filter.php</url>
+          <line>214</line>
+          <option name="timeStamp" value="74" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="php">
+          <url>file://$PROJECT_DIR$/app/Models/ApiModel.php</url>
+          <line>44</line>
+          <option name="timeStamp" value="76" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="php">
+          <url>file://$PROJECT_DIR$/app/Models/ApiModel.php</url>
+          <line>39</line>
+          <option name="timeStamp" value="79" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="php">
+          <url>file://$PROJECT_DIR$/app/Models/ApiModel.php</url>
+          <line>75</line>
+          <option name="timeStamp" value="83" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="php">
+          <url>file://$PROJECT_DIR$/app/Models/Filter.php</url>
+          <line>190</line>
+          <option name="timeStamp" value="88" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="php">
+          <url>file://$PROJECT_DIR$/app/Models/Filter.php</url>
+          <line>154</line>
+          <option name="timeStamp" value="89" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="php">
+          <url>file://$PROJECT_DIR$/app/Http/Controllers/Api/v1/FilterController.php</url>
+          <line>42</line>
+          <option name="timeStamp" value="90" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="php">
+          <url>file://$PROJECT_DIR$/app/Models/Filter.php</url>
+          <line>165</line>
+          <option name="timeStamp" value="91" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="php">
+          <url>file://$PROJECT_DIR$/app/Models/Filter.php</url>
+          <line>50</line>
+          <option name="timeStamp" value="93" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="php">
+          <url>file://$PROJECT_DIR$/app/Http/Controllers/Api/v1/FilterController.php</url>
+          <line>14</line>
+          <option name="timeStamp" value="94" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="php">
+          <url>file://$PROJECT_DIR$/app/Models/Filter.php</url>
+          <line>120</line>
+          <option name="timeStamp" value="98" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="php">
+          <url>file://$PROJECT_DIR$/app/Http/Controllers/Api/v1/FilterController.php</url>
+          <line>16</line>
+          <option name="timeStamp" value="99" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="php">
+          <url>file://$PROJECT_DIR$/app/Http/Requests/FilterRequests/GetFilterRequest.php</url>
+          <line>17</line>
+          <option name="timeStamp" value="100" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="php">
+          <url>file://$PROJECT_DIR$/app/Http/Requests/FilterRequests/GetFilterRequest.php</url>
+          <line>34</line>
+          <option name="timeStamp" value="101" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="php">
+          <url>file://$PROJECT_DIR$/app/Models/Filter.php</url>
+          <line>49</line>
+          <option name="timeStamp" value="102" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="php">
+          <url>file://$PROJECT_DIR$/app/Models/Filter.php</url>
+          <line>17</line>
+          <option name="timeStamp" value="103" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="php">
+          <url>file://$PROJECT_DIR$/app/Models/Filter.php</url>
+          <line>19</line>
+          <option name="timeStamp" value="104" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="php">
+          <url>file://$PROJECT_DIR$/app/Models/Filter.php</url>
+          <line>41</line>
+          <option name="timeStamp" value="105" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="php">
+          <url>file://$PROJECT_DIR$/app/Models/ApiModel.php</url>
+          <line>27</line>
+          <option name="timeStamp" value="106" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="php">
+          <url>file://$PROJECT_DIR$/app/Models/Filter.php</url>
+          <line>51</line>
+          <option name="timeStamp" value="107" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="php">
+          <url>file://$PROJECT_DIR$/app/Models/Filter.php</url>
+          <line>74</line>
+          <option name="timeStamp" value="108" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="php">
+          <url>file://$PROJECT_DIR$/app/Models/Filter.php</url>
+          <line>52</line>
+          <option name="timeStamp" value="109" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="php">
+          <url>file://$PROJECT_DIR$/app/Models/Filter.php</url>
+          <line>54</line>
+          <option name="timeStamp" value="110" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="php">
+          <url>file://$PROJECT_DIR$/app/Models/Filter.php</url>
+          <line>53</line>
+          <option name="timeStamp" value="111" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="php">
+          <url>file://$PROJECT_DIR$/app/Models/Filter.php</url>
+          <line>55</line>
+          <option name="timeStamp" value="112" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>

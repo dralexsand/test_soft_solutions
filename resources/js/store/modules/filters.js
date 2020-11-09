@@ -1,47 +1,78 @@
 import axios from 'axios'
 
 const state = () => ({
-    filters: [],
-    brands: {},
-    models: {},
-    prices: {},
-    transitions: {},
-    colors: {},
+
+    filt: {}
+
 })
 
 // getters
 const getters = {
-    GET_FILTERS(state) {
-        console.log('GET_FILTERS');
-        console.log(state.filters);
-        state.filters['prices'] = state.prices;
-        return state.filters;
+    GET_FILT(state) {
+        /*console.log('GET_filt');
+        console.log(state.filt);*/
+        console.log('GET_FILT');
+        return state.filt;
     },
-    GET_PRICES(state) {
-        console.log('GET_PRICES');
-        console.log(state.prices);
-        return state.prices;
-    }
+
 }
 
 // actions
 const actions = {
-    SET_FILTER_APPLY(context, data) {
-        context.commit('SET_FILTERS', data);
+    async SET_FILTER_ONLOAD_APPLY(context) {
+        console.log('SET_FILTER_ONLOAD_APPLY');
+
+        await axios
+            .get('/api/v1/filter/panel_init')
+            .then(response => {
+                let data = response.data.data;
+                //console.log(data);
+                context.commit('SET_FILT', data);
+
+            })
+            .catch(err => {
+                console.log(err);
+                this.errored = true;
+            })
+            .finally(() => console.log('SET_FILTER_ONLOAD_APPLY complete'));
     },
-    SET_PRICES_APPLY(context, data) {
-        context.commit('SET_PRICES', data);
+
+    EXCLUDED_MODELS_ID_BY_BRAND_APPLY(context, data) {
+        context.commit('EXCLUDED_MODELS_ID_BY_BRAND', data);
     },
+
 }
 
 // mutations
 const mutations = {
-    SET_FILTERS(state, data) {
-        return state.filters = data;
+    SET_FILT(state, payload) {
+        return state.filt = payload;
     },
-    SET_PRICES(state, data) {
-        return state.prices = data;
+
+    EXCLUDED_MODELS_ID_BY_BRAND(state, data) {
+        //console.log('EXCLUDED_MODELS_ID_BY_BRAND');
+        //console.log(data);
+
+        let count = state.filt.car_models.length;
+        let needle_brand_id, brand_arr;
+        let brand_id;
+
+        for (let i = 0; i < count; i++) {
+
+            brand_id = state.filt.car_models[i].brand_id;
+            needle_brand_id = parseInt(data.id);
+
+            if(brand_id === needle_brand_id){
+                //console.log(state.filt.car_models[i].name);
+                state.filt.car_models[i].value = data.value;
+            }
+        }
+        //return state.filt;
     },
+
+
+
+
 }
 
 export default {

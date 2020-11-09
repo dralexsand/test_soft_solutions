@@ -11,127 +11,150 @@
 
             <div class="col-md-3">
 
-                <table class="table">
+                <table class="table table-borderless">
                     <thead>
                     <th>Filter</th>
                     </thead>
                     <tbody>
-                    <tr>
+
+                    <tr class="panel_subheader">
                         <td>Brands</td>
                     </tr>
-                    <tr>
+
+                    <tr v-if="brands.length>0">
                         <td>
 
+                            <!--<div class="control-group">
+
+                                <label class="control control-checkbox"
+                                       :for="box_id">
+                                    {{ box_name }}
+                                    <input
+
+                                        :class="box_class"
+                                        :id="box_id"
+                                        :box_index="box_index"
+                                        :brand_id="brand_id"
+                                        type="checkbox"
+                                        v-model="box_value"
+                                    />
+                                    <div class="control_indicator"></div>
+                                </label>
+
+                            </div>-->
+
+
                             <BoxItem
-                                box_name="BMW, Germany"
-                                box_id="1"
+
+                                v-for="(brands_item, index_brands) in brands"
+                                :key="index_brands"
+                                :box_name="brands_item.name"
+                                :box_id="brands_item.id"
+                                :box_value="brands_item.value"
+                                :box_index="index_brands"
                                 box_class="b"
                             >
                             </BoxItem>
 
-                            <BoxItem
-                                box_name="Audi, Germany"
-                                box_id="7"
-                                box_class="b"
-                            >
-                            </BoxItem>
-
-                            <BoxItem
-                                box_name="Wolkswagen, Germany"
-                                box_id="11"
-                                box_class="b"
-                            >
-                            </BoxItem>
-
                         </td>
                     </tr>
-
                     <Divider/>
 
-                    <tr>
-                        <td>
+                    <tr class="panel_subheader">
+                        <td>Models</td>
+                    </tr>
 
+                    <tr v-if="car_models.length>0">
+                        <td>
                             <BoxItem
-                                box_name="BMW, Germany"
-                                box_id="3"
+                                v-for="(models_item, index_models) in car_models"
+                                :key="index_models"
+                                :box_name="models_item.name"
+                                :box_id="models_item.id"
+                                :box_value="models_item.value"
+                                :box_index="index_models"
+                                :brand_id="models_item.brand_id"
                                 box_class="m"
                             >
                             </BoxItem>
-
-                            <BoxItem
-                                box_name="Audi, Germany"
-                                box_id="5"
-                                box_class="m"
-                            >
-                            </BoxItem>
-
-                            <BoxItem
-                                box_name="Wolkswagen, Germany"
-                                box_id="7"
-                                box_class="m"
-                            >
-                            </BoxItem>
-
                         </td>
                     </tr>
-
                     <Divider/>
 
-                    <tr>
-                        <td>
-
-                            <BoxPrice
-                                min_price="50"
-                                max_price="10000000"
-                            >
-                            </BoxPrice>
-
-                        </td>
+                    <tr class="panel_subheader">
+                        <td>Colors</td>
                     </tr>
 
-                    <Divider/>
-
-                    <tr>
+                    <tr v-if="colors.length>0">
                         <td>
-
                             <BoxItem
-                                box_name="Manual"
-                                box_id="1"
-                                box_class="t"
-                            >
-                            </BoxItem>
-
-                            <BoxItem
-                                box_name="Automatic"
-                                box_id="2"
-                                box_class="t"
-                            >
-                            </BoxItem>
-
-                        </td>
-                    </tr>
-
-                    <Divider/>
-
-                    <tr>
-                        <td>
-
-                            <BoxItem
-                                v-for="color in filter_list_item.colors"
-                                box_name="color.name"
-                                box_id="color.id"
+                                v-for="(colors_item, index_colors) in colors"
+                                :key="index_colors"
+                                :box_name="colors_item.name"
+                                :box_id="colors_item.id"
+                                :box_value="colors_item.value"
+                                :box_index="index_colors"
                                 box_class="c"
                             >
                             </BoxItem>
+                        </td>
+                    </tr>
+                    <Divider/>
 
+                    <tr class="panel_subheader">
+                        <td>Transmissions</td>
+                    </tr>
+
+                    <tr v-if="transmissions.length>0">
+                        <td>
+                            <BoxItem
+                                v-for="(transmissions_item, index_transmissions) in transmissions"
+                                :key="index_transmissions"
+                                :box_name="transmissions_item.name"
+                                :box_id="transmissions_item.id"
+                                :box_value="transmissions_item.value"
+                                :box_index="index_transmissions"
+                                box_class="t"
+                            >
+                            </BoxItem>
+                        </td>
+                    </tr>
+                    <Divider/>
+
+                    <tr class="panel_subheader">
+                        <td>Price range</td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <BoxPrice
+                                :min_price="prices.min_price"
+                                :max_price="prices.max_price"
+                            >
+                            </BoxPrice>
                         </td>
                     </tr>
 
+                    <Divider/>
+
+                    <tr class="panel_subheader">
+                        <td>Years range</td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <BoxYears
+                                :min_year="years.min_year"
+                                :max_year="years.max_year"
+                            >
+                            </BoxYears>
+                        </td>
+                    </tr>
 
                     </tbody>
                 </table>
 
+
             </div>
+
             <div class="col-md-9">
 
                 <nav aria-label="Page navigation example">
@@ -226,24 +249,20 @@
 import Divider from "../components/Divider";
 import BoxItem from "../components/BoxItem";
 import BoxPrice from "../components/BoxPrice";
+import BoxYears from "../components/BoxYears";
+
+import {mapState} from 'vuex';
 
 export default {
-    props: {
-        box: {
-            box_class: 'default_class',
-            box_id: 'default_id',
-            box_description: 'Default description',
-        },
-        checkboxes_list: {
-            checkbox_id: 'germany',
-            checkbox_class: 'germany_bmw',
-            checkbox_description: 'BMW - auto from Germany',
-        }
-    },
+    props: {},
     components: {
-        BoxItem, Divider, BoxPrice
+        BoxItem, Divider, BoxPrice, BoxYears
     },
     data: function () {
+
+        this.getFilterPanelInit();
+        //this.onChangeState();
+
         return {
             posts: [],
             post: {
@@ -259,73 +278,76 @@ export default {
             loading: true,
             errored: false,
 
-            filter_data: {},
+            //filter_data: {},
 
-            fdata: {
-                brands: [],
-                models: [],
+            brands: [],
+            car_models: [], //this.$store.state.filters_init.car_models,
+            colors: [],
+            transmissions: [],
+
+            /*prices:[],
+            years:[],*/
+
+            prices: {
+                /*min_price: '',
+                max_price: ''*/
             },
-
-            filter_list: [],
-            filter_list_item: {
-                colors: []
+            years: {
+                /*min_year: '',
+                max_year: ''*/
             },
-            /*colorItem: {
-                id: '',
-                name: ''
-            }*/
-
 
         }
     },
-    mounted() {
-        this.getFilterPanel();
+    created() {
         this.getPosts();
+
     },
+
+    mounted() {
+        //this.updatePanel();
+        this.onLoad();
+    },
+
     methods: {
-        getFilterPanel() {
-            axios
-                .get('/api/v1/list_filters')
-                .then(response => {
-                    let filter_list = response.data;
-                    this.filter_list = filter_list;
-                    console.log('FILTER_LIST');
-                    console.log(filter_list);
 
-                    this.filter_list_item.colors = filter_list.colors;
-                    console.log('FILTER_LIST_COLORS');
-                    console.log(filter_list.colors);
+        onChangeState() {
+            let filt = this.$store.getters['filterspost/GET_FILT'];
 
-                })
-                .catch(err => {
-                    console.log(err);
-                    this.errored = true;
-                })
-                .finally(() => this.loading = false);
-
+            console.log('FILT');
+            console.log(filt);
         },
 
+        onLoad() {
+            this.$store.dispatch('filterspost/SET_FILTER_ONLOAD_APPLY');
+        },
 
-        applyFilter() {
-            let boxes = this.$store.getters['filters/GET_FILTERS'];
-            console.log('STATE FILTERS');
-            console.log(boxes);
-            this.postFilter();
+        onChangeBoxState() {
+            console.log('onChangeBoxState init');
+        },
+        changeBrandsList() {
+            console.log('Brand list is changed');
+        },
+        updatePanel() {
+            console.log('updatePanel() load');
+
+            let data_filters_update = this.$store.getters['filterspost/GET_FILTERS_INIT'];
+            this.brands = data_filters_update.brands;
+            this.car_models = data_filters_update.car_models;
+            this.colors = data_filters_update.colors;
+            this.transmissions = data_filters_update.transmissions;
         },
 
         postFilter() {
 
-            let postBody = {
-                'models': [
-                    'Camry', 'Crown'
-                ],
+            let data_filter = {
                 'brands': [
-                    'Porshe'
+                    1, 2
                 ],
             }
 
-            axios.post(`/api/v1/filters`, {
-                body: postBody
+            axios.post(`/api/v1/filter/data`, {
+                data_filter
                 //body: this.postBody
             })
                 .then(response => {
@@ -336,7 +358,6 @@ export default {
                     this.errors.push(e)
                 })
         },
-
         paginateTable(response) {
             let pagination = {
                 current_page: response.current_page,
@@ -349,8 +370,7 @@ export default {
             }
             this.pagination = pagination;
             //console.log(this.pagination);
-        }
-        ,
+        },
         getPosts(page_url) {
 
             page_url = page_url || '/api/v1/cars';
@@ -368,12 +388,41 @@ export default {
                     this.errored = true;
                 })
                 .finally(() => this.loading = false);
-        }
-        ,
+        },
+
+        async getFilterPanelInit() {
+
+            await axios.get(`/api/v1/filter/panel_init`)
+                .then(response => {
+                    let filter_list = response.data.data;
+
+                    console.log(filter_list);
+
+                    this.$store.dispatch('filterspost/SET_FILTER_INIT_APPLY', filter_list);
+
+                    this.brands = filter_list.brands;
+                    this.car_models = filter_list.car_models;
+                    this.colors = filter_list.colors;
+                    this.transmissions = filter_list.transmissions;
+
+                    this.prices = filter_list.prices;
+                    this.years = filter_list.years;
+
+                    //console.log('this.years: ' + this.years.max_year);
+
+                })
+                .catch(err => {
+                    console.log(err);
+                    this.errored = true;
+                })
+                .finally(() => this.loading = false);
+        },
+
     }
 }
 </script>
-<style>
+
+<style scoped>
 .btn_apply {
     position: fixed;
     top: 100px;
@@ -385,5 +434,11 @@ export default {
     top: 200px;
     left: 10px;
 }
+
+.panel_subheader {
+    background-color: #5a6268;
+    color: lightgoldenrodyellow;
+}
+
 
 </style>

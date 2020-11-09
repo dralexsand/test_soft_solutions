@@ -3,9 +3,8 @@
 namespace App\Models;
 
 use Illuminate\Database\Eloquent\Factories\HasFactory;
-use Illuminate\Database\Eloquent\Model;
 
-class CarModel extends Model
+class CarModel extends ApiModel
 {
     use HasFactory;
 
@@ -18,5 +17,4 @@ class CarModel extends Model
         'brand_id',
         'name',
     ];
-
 }
